@@ -38,12 +38,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Common.Logging, Version=3.0.0.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
-      <HintPath>..\packages\Common.Logging.3.0.0\lib\net40\Common.Logging.dll</HintPath>
+    <Reference Include="Common.Logging, Version=2.0.0.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Common.Logging.2.0.0\lib\2.0\Common.Logging.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Common.Logging.Core, Version=3.0.0.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
       <HintPath>..\packages\Common.Logging.Core.3.0.0\lib\net40\Common.Logging.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CSharp.Readability, Version=0.1.5522.17977, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CSharp.Readability.0.1.5522.17977\lib\net40\CSharp.Readability.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
@@ -53,6 +57,14 @@
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Spring.Rest, Version=1.1.1.35040, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <HintPath>..\packages\Spring.Rest.1.1.1\lib\net40-client\Spring.Rest.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Spring.Social.Core, Version=1.0.1.35140, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <HintPath>..\packages\Spring.Social.Core.1.0.1\lib\net40-client\Spring.Social.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Swashbuckle.Core">
@@ -98,6 +110,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Readme\Spring.Rest.txt" />
+    <Content Include="App_Readme\Spring.Social.Core.txt" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
     <Content Include="packages.config" />
@@ -113,6 +127,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="PrivateAppSettings.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
