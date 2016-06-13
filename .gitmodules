@@ -1,0 +1,3 @@
+[submodule "CSharp.Readability"]
+	path = CSharp.Readability
+	url = https://github.com/FBoucher/CSharp.Readability
