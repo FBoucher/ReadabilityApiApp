@@ -37,7 +37,7 @@ namespace ReadabilityApiApp.Controllers
             var fromDate = PublishDate.AddDays(-1 * retryFactor);
             var toDate = PublishDate.AddDays(retryFactor);
 
-            var bookmarks = RealAPI.BookmarkOperations.GetReadingListBookmarksAsync(1, 50, "-date_added", "", fromDate, toDate).Result;
+            var bookmarks = RealAPI.BookmarkOperations.GetAllBookmarksAsync(1, 50, "-date_added", "", fromDate, toDate).Result;
 
             var result = from b in bookmarks.Bookmarks
                          where b.Article.Title == Title
@@ -65,7 +65,7 @@ namespace ReadabilityApiApp.Controllers
         }
 
         /// <summary>
-        /// Search an article by the title starting to the date to more recent.
+        /// Search an article throutgh all boormarck and achives by the title starting to the date to more recent 
         /// </summary>
         /// <param name="Title">Book or article title.</param>
         /// <param name="PublishDate"></param>
@@ -76,6 +76,8 @@ namespace ReadabilityApiApp.Controllers
         {
             return SearchArticle(Title, PublishDate, 1);
         }
+
+
 
         [Route("ArchiveBookmark")]
         [HttpPost]
