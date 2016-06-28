@@ -214,3 +214,4 @@ ModelManifest.xml
 
 # Private AppSettings
 PrivateAppSettings.config
+/ReadabilityApiApp/Properties/PublishProfiles/ReadabilityApiApp - Web Deploy.pubxml

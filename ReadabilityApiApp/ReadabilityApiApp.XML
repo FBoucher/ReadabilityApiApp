@@ -6,7 +6,7 @@
     <members>
         <member name="M:ReadabilityApiApp.Controllers.ReadabilityController.SearchByTitle(System.String,System.DateTime)">
             <summary>
-            Search an article by the title starting to the date to more recent.
+            Search an article throutgh all boormarck and achives by the title starting to the date to more recent 
             </summary>
             <param name="Title">Book or article title.</param>
             <param name="PublishDate"></param>
